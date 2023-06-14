@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: #333;
+    background-color: #212529;
     color: #fff;
     display: flex;
     align-items: center;
@@ -14,11 +14,7 @@
     /* Add z-index to ensure the header stays on top */
 }
 
-.fixed-header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 .fixed-header a {
     color: #fff;
@@ -31,22 +27,28 @@
 }
 
 .custom-link {
-    color: white !important;
+    color: white
     /* Initial color */
 }
 
 .custom-link.active {
-    color: greenyellow !important;
+    
+    color: #088F8F !important;
     /* Color after click */
 }
 
 .customBrown-link {
-    color: white !important;
+    color: white 
     /* Initial color */
 }
 
 .customBrown-link.active {
     color: burlywood !important;
     /* Color after click */
+}
+
+.whiteColor{
+    color: #fff 
+    
 }
 

@@ -15,20 +15,22 @@ const MyCard: React.FC<CardProps> = ({
   description,
 }) => {
   return (
-    <div className="card">
-      <div className="card-img">
-        <img src={image} alt="Card" />
-        <div className="card-title">{title}</div>
-      </div>
-      <div className="row">
-        <div className="col-6">
-          <h3 className="cardHeading">The Title</h3>
+    <div className="toCenter">
+      <div className="card">
+        <div className="card-img">
+          <img src={image} alt="Card" />
+          <div className="card-title">{title}</div>
         </div>
-        <div className="col-6">{children}</div>
-      </div>
+        <div className="row">
+          <div className="col-6">
+            <h3 className="cardHeading">The Title</h3>
+          </div>
+          <div className="col-6">{children}</div>
+        </div>
 
-      {/* <h3 className="cardHeading">The Title</h3> */}
-      <div className="card-description">{description}</div>
+        {/* <h3 className="cardHeading">The Title</h3> */}
+        <div className="card-description">{description}</div>
+      </div>
     </div>
   );
 };

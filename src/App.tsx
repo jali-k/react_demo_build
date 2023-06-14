@@ -7,6 +7,7 @@ import Like from "./components/Like";
 import MyCard from "./components/MyCard";
 import image from "./card.jpg";
 import imageBrown from "./br.jpeg";
+import TestHeader from "./components/TestHeader";
 
 function App() {
   const handleItemClick = (item: String) => {
@@ -24,12 +25,9 @@ function App() {
   }
 
   return (
-    <div
-      style={{
-        paddingTop: "70px",
-      }}
-    >
+    <div>
       <Header></Header>
+      <div id="h" style={{ height: "100px" }}></div>
 
       {/* <ListGroup
         items={["A", "B", "C", "D", "E", "F"]}
@@ -41,10 +39,13 @@ function App() {
 
       {/* The Green Section .............................. */}
 
-      <div id="green_section" className="container">
+      <div
+        id="green_section"
+        className="container align-items-center justify-content-center"
+      >
         <h2>The Green Section</h2>
-        <div className="row">
-          <div className="col-sm-6 col-md-3">
+        <div className="row mt-4">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={image}
               title={"The Title"}
@@ -55,7 +56,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-6 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={image}
               title={"The Title"}
@@ -66,7 +67,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={image}
               title={"The Title"}
@@ -77,7 +78,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={image}
               title={"The Title"}
@@ -91,8 +92,8 @@ function App() {
         </div>
         <div className="separator"></div>
         {/* New row */}
-        <div className="row">
-          <div className="col-sm-6 col-md-3">
+        <div className="row mt-4">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={image}
               title={"The Title"}
@@ -103,7 +104,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-6 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={image}
               title={"The Title"}
@@ -114,7 +115,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={image}
               title={"The Title"}
@@ -125,7 +126,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={image}
               title={"The Title"}
@@ -142,10 +143,13 @@ function App() {
       <br />
       <div className="separator"></div>
       {/* The Brown Section ............................. */}
-      <div id="brown_section" className="container">
+      <div
+        id="brown_section"
+        className="container align-items-center justify-content-center"
+      >
         <h2>The Brown Section</h2>
-        <div className="row">
-          <div className="col-sm-6 col-md-3">
+        <div className="row mt-4">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={imageBrown}
               title={"The Title"}
@@ -156,7 +160,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-6 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={imageBrown}
               title={"The Title"}
@@ -167,7 +171,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={imageBrown}
               title={"The Title"}
@@ -178,7 +182,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={imageBrown}
               title={"The Title"}
@@ -192,8 +196,8 @@ function App() {
         </div>
         <div className="separator"></div>
         {/* New row */}
-        <div className="row">
-          <div className="col-sm-6 col-md-3">
+        <div className="row mt-4">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={imageBrown}
               title={"The Title"}
@@ -204,7 +208,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-6 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={imageBrown}
               title={"The Title"}
@@ -215,7 +219,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={imageBrown}
               title={"The Title"}
@@ -226,7 +230,7 @@ function App() {
               <Like onClickHandler={() => console.log("Clicked")} />
             </MyCard>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
             <MyCard
               image={imageBrown}
               title={"The Title"}
